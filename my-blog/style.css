@@ -1,0 +1,219 @@
+:root {
+    --primary-color: #0073e6;
+    --text-dark: #1e1e2f;
+    --bg-light: #f9f9fb;
+    --border-color: #e2e8f0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--text-dark);
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.site-header {
+    border-bottom: 1px solid var(--border-color);
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-icon {
+    color: #ff6666;
+    font-size: 1.2rem;
+}
+
+.sign-up-btn, .submit-form-btn {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.blog-main {
+    padding: 40px 20px;
+}
+
+.blog-post {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.blog-category {
+    color: var(--primary-color);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.blog-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.author-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.author-avatar {
+    width: 40px;
+    height: 40px;
+    background: #10b981;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.author-info span {
+    display: block;
+    font-size: 0.9rem;
+}
+
+.author-title {
+    color: #64748b;
+}
+
+.hero-cta-banner {
+    background: #333333;
+    color: #ffffff;
+    padding: 16px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.blog-post p {
+    font-size: 1.15rem;
+    margin-bottom: 24px;
+}
+
+/* Signature One-Word Blue Clickable Links */
+.inline-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--primary-color);
+    font-weight: 500;
+}
+
+.inline-link:hover {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* Citation Callout Box */
+.insight-box {
+    background: var(--bg-light);
+    border-left: 4px solid #ef4444;
+    padding: 20px;
+    border-radius: 0 8px 8px 0;
+    margin: 30px 0;
+}
+
+.insight-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    color: #ef4444;
+}
+
+.calculator-promo-card {
+    background: linear-gradient(135deg, #f3e8ff 0%, #e0e7ff 100%);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.calc-trigger-btn {
+    background: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* Modal Popup Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+.modal-content {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.modal-content label {
+    display: block;
+    font-size: 0.9rem;
+    margin: 15px 0 5px;
+    font-weight: 600;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.submit-form-btn {
+    width: 100%;
+    margin-top: 20px;
+}
